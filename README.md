@@ -1,12 +1,69 @@
-# React + Vite
+# Image_Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![JavaScript](https://img.shields.io/badge/Primary%20Language-JavaScript-yellow)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+No description provided.
 
-## Expanding the ESLint configuration
+## Key Features and Highlights
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Utilizes React for frontend development
+- Integrates with Axios for API requests
+- Implements TailwindCSS for styling
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Suhasygowda/Image_Frontend.git
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+## Usage
+
+```jsx
+import React from 'react';
+import axios from 'axios';
+
+const fetchData = async () => {
+  const response = await axios.get('https://api.example.com/data');
+  console.log(response.data);
+}
+```
+
+## Dependencies
+
+- "@tailwindcss/vite": "^4.1.11"
+- "axios": "^1.10.0"
+- "motion": "^12.23.0"
+- "react": "^19.1.0"
+- "react-dom": "^19.1.0"
+- "react-hot-toast": "^2.5.2"
+- "react-router-dom": "^7.6.3"
+- "tailwindcss": "^4.1.11"
+
+## Contributing
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature`)
+3. Make your changes
+4. Commit your changes (`git commit -am 'Add new feature'`)
+5. Push to the branch (`git push origin feature`)
+6. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
